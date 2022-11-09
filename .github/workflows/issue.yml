@@ -1,0 +1,10 @@
+name: New issues
+on:
+  issues:
+    types: opened
+jobs:
+  warn:
+    runs-on: ubuntu-latest
+    steps:
+      - name: warn-me
+        run: echo "Sending email ..."
